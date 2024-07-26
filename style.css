@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@400;500&family=Roboto:wght@700&display=swap');
+/*font-family: 'Poppins', sans-serif; 1B6B93*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(./pic/back.jpg);
+    background-size: cover;
+    color: white;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 70px;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+.logo img{
+    height: 40px;
+    
+    padding-top: 5px;
+    border-radius: 50%;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+}
+
+.menu a:hover{
+    background-color: #1B6B93;
+    border-radius: 9px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+
+}
+.left{
+    flex-basis: 60%;
+}
+.right{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.right img{
+    height: 300px;
+    border-radius: 30% 70% 70% 30% / 38% 57% 43% 70%;
+}
+
+.left h2{
+    font-family: 'Poppins', sans-serif;
+
+}
+h2 span{
+    color: #1B6B93;
+    font-size: 2rem;
+}
+.left h1{
+    font-family: 'Roboto', sans-serif;
+    color: #1e5166;
+}
+.left p{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5rem;
+    margin-top: 8px;
+
+}
+.hire a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background: #1B6B93;
+    padding: 5px;
+    border-radius: 7px;
+    
+}
+.hire a:hover{
+    background: transparent;
+    border: 2px solid #1B6B93;
+
+}
+#bio{
+    color: white;
+    background: #070707;
+    cursor: pointer;
+    padding: 150px 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.leftbio{
+    flex-basis: 40%;
+
+
+}
+
+.rightbio{
+    flex-basis: 60%;
+    padding: 0 40px;
+}
+.leftbio img{
+   width: 100%;
+}
+.rightbio p{
+    margin: 15px 0px;
+    line-height: 1.5rem;
+}
+.rightbio h1{
+    font-size: 3rem;
+}
+#follow i{
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+#hire {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background: #1B6B93;
+    padding: 6px;
+    border-radius: 7px;
+    font-size: .8rem;
+    
+}
+#hire:hover{
+    background: transparent;
+    color: #1B6B93;
+    border: 2px solid #1B6B93;
+}
+#cv
+    {
+        text-decoration: none;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        background: #1B6B93;
+        padding: 6px;
+        border-radius: 7px;
+        font-size: .8rem;
+        
+    }
+.link{
+    text-align: center;
+    margin-top: 3rem;
+}
+#cv:hover{
+    background: transparent;
+    color: #1B6B93;
+    border: 2px solid #1B6B93;
+}
+/*services*/
+#services{
+    padding: 30px 0;
+    color: white;
+    background: #070707;
+    font-family: 'Poppins', sans-serif;
+
+}
+.services-list{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 70px;
+}
+.services-list div{
+    background: #262626;
+    color: white;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+.services-list i{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.services-list h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #1B6B93;
+    transform: translateY(-10px);
+}
+/*  my work */
+
+#portfolio{
+    background: #070707;
+    color: white;
+    padding: 50px 0px;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 70px;
+    
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+ 
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.5),#101314);
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0s;
+
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.layer a{
+    margin-top: 5px;
+    color: rgb(15, 14, 14);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 50px;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+.layer i{
+    color: #070707;
+}
+.work:hover img{
+    transform: scale(1.1);
+
+}
+.work:hover .layer{
+    height: 40%;
+    
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #1B6B93;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #1B6B93;
+    transition: 0.5s;
+}
+.btn:hover{
+    color: white;
+    background: #1B6B93;
+}
+
+/*contact*/
+#contact{
+    background: #070707;
+    color: white;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px;
+    width: 100%;
+
+    
+}
+.contact-left{
+
+    margin-top: 20px;
+   
+}
+.contact-left h1{
+    margin-bottom: 15px;
+    
+}
+.contact-right{
+    width: 100%;
+    padding: 20px 30px;
+    margin: 40px auto;
+}
+.social-media i{
+    color: #1B6B93;
+    font-size: 20px;
+    margin: 10px 7px;
+}
